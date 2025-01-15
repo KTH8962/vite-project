@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 
 function Checkbox() {
   const checkArray = ['apple', 'grape', 'melon']
-  const [checked, setChecked] = useState(false)
-  const [checkedItems, setCheckedItems] = useState([])
+  const [checked, setChecked] = useState<boolean>(false)
+  const [checkedItems, setCheckedItems] = useState<Array<string>>([])
   const handleChecked = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value, checked } = event.target
     setCheckedItems(prevCheckedItems =>
