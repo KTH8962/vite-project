@@ -8,6 +8,8 @@ export const menuState = atom<Array<Record<string, string>>>({
     { link: 'checkbox', name: 'Checkbox' },
     { link: 'radio', name: 'Radio' },
     { link: 'refTest', name: 'RefTest' },
-    { link: 'props', name: 'Props' }
+    { link: 'props', name: 'Props' },
+    { link: 'slot', name: 'Slot' },
+    { link: 'context', name: 'Context' }
   ]
 })

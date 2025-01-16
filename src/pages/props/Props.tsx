@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import TextField from '@/components/textField/TextField'
 
 function Props() {

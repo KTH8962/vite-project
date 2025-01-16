@@ -3,10 +3,12 @@ import Header from './components/header/Header'
 import MainPage from '@pages/MainPage'
 import BtnSelect from '@/pages/btnSelect/BtnSelect'
 import TextInput from '@/pages/textInput/TextInput'
-import Checkbox from './pages/checkbox/Checkbox'
-import Radio from './pages/radio/Radio'
-import RefTest from './pages/refTest/RefTest'
-import Props from './pages/props/Props'
+import Checkbox from '@/pages/checkbox/Checkbox'
+import Radio from '@/pages/radio/Radio'
+import RefTest from '@/pages/refTest/RefTest'
+import Props from '@/pages/props/Props'
+import Slot from '@/pages/slot/slot'
+import Context from '@/pages/context/Context'
 
 function App() {
   return (
@@ -41,6 +43,14 @@ function App() {
         <Route
           path="/props"
           element={<Props />}
+        />
+        <Route
+          path="/slot"
+          element={<Slot />}
+        />
+        <Route
+          path="/context"
+          element={<Context />}
         />
       </Routes>
     </BrowserRouter>
