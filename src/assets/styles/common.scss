@@ -191,3 +191,16 @@ img {
 ::-webkit-scrollbar-thumb {
   background: #b3b3b3;
 }
+
+nav {
+  a {
+    &.active {
+      font-weight: bold;
+      color: rgb(123, 72, 165);
+    }
+  }
+}
+
+main {
+  height: calc(150vh - 80px);
+}

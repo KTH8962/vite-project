@@ -1,6 +1,6 @@
 import { selector } from 'recoil'
 import { menuState } from '../atoms/menuState'
-import { Link, Route } from 'react-router-dom'
+import { NavLink, Route } from 'react-router-dom'
 
 export const menuLink = selector({
   key: 'menuLik',
@@ -8,11 +8,11 @@ export const menuLink = selector({
     const menus = get(menuState)
     return menus.map(item => {
       return (
-        <Link
+        <NavLink
           to={`/${item.link}`}
           key={item.link}>
           {item.name}
-        </Link>
+        </NavLink>
       )
     })
   }
