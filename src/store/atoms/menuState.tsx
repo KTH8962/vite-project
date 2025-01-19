@@ -10,6 +10,8 @@ export const menuState = atom<Array<Record<string, string>>>({
     { link: 'refTest', name: 'RefTest' },
     { link: 'props', name: 'Props' },
     { link: 'slot', name: 'Slot' },
-    { link: 'context', name: 'Context' }
+    { link: 'context', name: 'Context' },
+    { link: 'navigate', name: 'Navigate' },
+    { link: 'movies', name: 'Movies' }
   ]
 })

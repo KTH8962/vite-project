@@ -9,6 +9,10 @@ import Props from '@/pages/props/Props'
 import Slot from '@/pages/slot/slot'
 import Context from '@/pages/context/Context'
 import DefaultLayout from './layouts/DefaultLayout'
+import Navigate from './navigate/Navigate'
+import MoiveDetails from './movie/MoiveDetails'
+import Movies from './movie/Moives'
+import NotFound from './NotFound'
 
 const router = createBrowserRouter([
   {
@@ -49,8 +53,26 @@ const router = createBrowserRouter([
       {
         path: '/context',
         element: <Context />
+      },
+      {
+        path: '/navigate',
+        element: <Navigate />
+      },
+      {
+        path: '/movies',
+        element: <Movies />,
+        children: [
+          {
+            path: ':movieId',
+            element: <MoiveDetails />
+          }
+        ]
       }
     ]
+  },
+  {
+    path: '*',
+    element: <NotFound />
   }
 ])
 
